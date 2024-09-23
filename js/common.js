@@ -1,6 +1,7 @@
 function getValueByInput (id){
-    const property = document.getElementById(id).value;
-    const values = parseFloat(property);
+    const property = document.getElementById(id);
+    const propertyValue = property.value;
+    const values = parseInt(propertyValue);
     return values;
 }
 

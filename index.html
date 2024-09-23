@@ -41,7 +41,7 @@
         </a>
         <a class=" flex justify-between items-center text-xl">
           <img src="./assets/coin.png" alt="">
-          <p class="ml-3"><span>500</span> BDT</p>
+          <p class="ml-3"><span id="main-ballance">1500</span> BDT</p>
         </a>
       </div>
     </nav>
@@ -72,7 +72,23 @@
             makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives
             of those in need.</p>
           <input id="domain-amount" class="input w-full" type="text" placeholder="Write Donation Amount">
-          <button class="btn w-full bg-comonButton font-bold ">Donate</button>
+          <button onclick="my_modal_1.showModal()" class="btn w-full bg-comonButton font-bold ">Donate</button>
+          <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle ">
+            <div class="modal-box text-center ">
+              <h3 class="text-3xl  font-extrabold">Congrates!</h3>
+              <div class="flex items-center justify-center py-4">
+                <img src="./assets/coin.png" alt="">
+              </div>
+              <p class="capitalize text-xl font bold">You have Donate for Humankind</p>
+              <p class="font-extrabold text-xl py-4 ">Successfully</p>
+              <div class="modal-action">
+                <form method="dialog">
+                  <button method="dialog" class="btn">Close Confirmation</button>
+                  <!-- if there is a button in form, it will close the modal -->
+                </form>
+              </div>
+            </div>
+          </dialog>
         </div>
 
 
@@ -92,7 +108,23 @@
             aftermath of this disaster. Every contribution counts towards making a real difference. Please consider
             donating today to assist those in urgent need.</p>
           <input id="domain-amount" class="input w-full" type="text" placeholder="Write Donation Amount">
-          <button class="btn w-full bg-comonButton font-bold ">Donate</button>
+          <button  onclick="my_modal_2.showModal()" class="btn w-full bg-comonButton font-bold ">Donate</button>
+          <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle ">
+            <div class="modal-box text-center ">
+              <h3 class="text-3xl  font-extrabold">Congrates!</h3>
+              <div class="flex items-center justify-center py-4">
+                <img src="./assets/coin.png" alt="">
+              </div>
+              <p class="capitalize text-xl font bold">You have Donate for Humankind</p>
+              <p class="font-extrabold text-xl py-4 ">Successfully</p>
+              <div class="modal-action">
+                <form method="dialog">
+                  <button method="dialog" class="btn">Close Confirmation</button>
+                  <!-- if there is a button in form, it will close the modal -->
+                </form>
+              </div>
+            </div>
+          </dialog>
         </div>
 
 
@@ -103,7 +135,7 @@
         <div class="ml-5 space-y-5 mt-4">
           <button class="btn">
             <img src="./assets/coin.png" alt="">
-            <p> <span>0</span> <span>BDT</span></p>
+            <p> <span id="total-donate-amount">0</span> <span>BDT</span></p>
           </button>
           <h3 class="text-xl font-bold">Aid for Injured in the Quota Movement</h3>
           <p> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals.
@@ -112,15 +144,15 @@
             during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in
             their recovery. Please consider making a donation to support these brave individuals in their time of need.
           </p>
-          <input id="domain-amount" class="input w-full" type="text" placeholder="Write Donation Amount">
-          <button onclick="my_modal_5.showModal()" class="btn w-full bg-comonButton font-bold ">Donate</button>
-          <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle ">
+          <input id="donate-amount" class="input w-full" type="text" placeholder="Write Donation Amount">
+          <button id="donate-button"  class="btn w-full bg-comonButton font-bold ">Donate</button>
+          <dialog id="my_modal_5" class=" modal modal-middle sm:modal-middle ">
             <div class="modal-box text-center ">
               <h3 class="text-3xl  font-extrabold">Congrates!</h3>
               <div class="flex items-center justify-center py-4">
-                <img  src="./assets/coin.png" alt="">
+                <img src="./assets/coin.png" alt="">
               </div>
-              <p class="capitalize text-xl font bold">You have Donate for Humankind</p>
+              <p class="capitalize text-xl font bold"><span id="show-modal-amount">88</span> You have Donate for Humankind</p>
               <p class="font-extrabold text-xl py-4 ">Successfully</p>
               <div class="modal-action">
                 <form method="dialog">
@@ -136,27 +168,7 @@
 
     <!-- history section  -->
     <section id="history-section" class=" hidden space-y-4 pt-10">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione libero fuga tempore, iste doloremque molestias
-        earum magnam, placeat deserunt rerum accusantium est nobis hic quisquam quae nesciunt velit ipsam dolore
-        molestiae assumenda quibusdam voluptatibus ducimus nihil autem! Nisi excepturi rem mollitia officia provident,
-        veritatis quos omnis itaque quae perferendis asperiores. Maxime possimus numquam itaque amet pariatur labore sed
-        id saepe esse neque? Unde quae officia nemo eligendi odit maiores quos itaque incidunt autem voluptate.
-        Inventore quas iste quam! Culpa voluptatem molestias, non velit veniam provident quo dolorem? Distinctio sunt
-        autem ab, molestiae omnis animi id sit quisquam veritatis maiores unde dolore, doloremque nesciunt eligendi
-        itaque rem exercitationem pariatur! Inventore quod a impedit suscipit earum quis. Ullam explicabo illo assumenda
-        est eaque, iure corporis veniam hic quam ad rem ab deleniti rerum vero, nam dolorem molestias quis quisquam
-        necessitatibus tempore? Placeat incidunt maiores ut consequatur voluptatibus numquam molestias dolorem at et
-        obcaecati magni, pariatur atque recusandae reprehenderit quos est, inventore quia corrupti modi voluptatem velit
-        fuga? Delectus saepe perferendis voluptatibus, ab, recusandae illum quis consectetur tempora aspernatur dolores
-        veritatis similique nesciunt? Eveniet architecto nam rem consectetur ducimus beatae qui debitis laborum libero
-        alias fugit, officia vitae, excepturi, consequuntur maiores quisquam dolorem veniam veritatis! Repellendus earum
-        nihil iusto et magni deleniti voluptate veritatis rerum odio, eum vel pariatur praesentium, mollitia ad. Ab unde
-        consectetur inventore dicta optio ad molestiae corporis accusamus hic illo provident soluta illum eos deleniti
-        eveniet reiciendis atque, error recusandae assumenda quisquam molestias? Quis, officiis nemo. Voluptates, eos
-        itaque. Odio esse vitae, amet eum quo id, cupiditate quae optio cum eius hic tenetur? Aperiam nulla voluptatum
-        deserunt dicta, fugiat vero sint! Sapiente, porro unde iusto, ipsa excepturi voluptate perspiciatis numquam
-        voluptates consequatur eos aperiam corporis, sit cumque voluptas. Repudiandae minus rem architecto ducimus quas
-        ratione placeat id omnis quos?</p>
+     
     </section>
   </main>
   <footer class="bg-navbarBg h-16">
@@ -166,6 +178,7 @@
   <script src="./js/targetBLog.js"></script>
   <script src="./js/common.js"></script>
   <script src="./js/features.js"></script>
+  <script src="./js/history.js"></script>
 
 </body>
 
