@@ -22,7 +22,7 @@ document.getElementById('Donate-now-btn').addEventListener('click', function (ev
             const historyEl = document.getElementById('history-section');
             historyEl.innerHTML += `<div class="border p-4 bg-white space-y-4  rounded-xl">
                 <p class=" text-xl font-bold "> 
-                <span>${donateInput}</span> Taka is Donated for 
+                <span>${donateInput}</span> Taka is
                 ${donate1stTitle}
                  </p>
                 <p class="text-xl">${time.toString()}</p>
@@ -43,6 +43,43 @@ document.getElementById('Donate-now-btn').addEventListener('click', function (ev
 
 
 
+// catch 2nd donation button
+
+document.getElementById('donate-btn-2').addEventListener('click', function (event) {
+    event.preventDefault();
+    const times = new Date();
+    const DonateAmount2 = getValueByInput('donate-amount-2');
+    const mainBallanceEl2 = getValueByTag('main-ballance');
+    if (DonateAmount2 === 'number' || DonateAmount2 > 0) {
+        const TotalDonateAmount = getValueByTag('total-donate-ballance');
+        const newTotalAmount = TotalDonateAmount + DonateAmount2;
+        const remainingAmount = mainBallanceEl2 - DonateAmount2;
+        if (remainingAmount < 0) {
+            alert('You dont have any Suffecient Ballance');
+            return;
+        } else {
+            document.getElementById('total-donate-ballance').innerText = newTotalAmount;
+            document.getElementById('main-ballance').innerText = remainingAmount;
+            const myModal3 = document.getElementById('my_modal_3');
+            myModal3.showModal();
+            const donate2Title = document.getElementById('donate-2nd-title').innerText;
+            const historyEl2 = document.getElementById('history-section');
+            historyEl2.innerHTML += `<div class="border p-4 bg-white space-y-4  rounded-xl">
+                <p class=" text-xl font-bold "> 
+                <span>${DonateAmount2}</span> Taka is
+                ${donate2Title}
+                 </p>
+                <p class="text-xl">${times.toString()}</p>
+                </div>`;
+            document.getElementById('donate-amount-2').value = '';
+        }
+    }
+    else {
+        alert('Invalid Input Selected');
+        return;
+
+    }
+})
 
 
 
