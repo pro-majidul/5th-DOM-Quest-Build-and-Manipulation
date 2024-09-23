@@ -1,3 +1,58 @@
+// catch 1st donation button 
+
+document.getElementById('Donate-now-btn').addEventListener('click',function(event){
+    event.preventDefault();
+    const time = new Date();
+    const donateInput = getValueByInput('donate-input');
+    const mainBallanceEl = getValueByTag('main-ballance');
+
+    if(donateInput ==='number' || donateInput > 0){
+        const nitDonateAmount = getValueByTag('nit-donate-amount');
+        const newNitDonateBallance = donateInput + nitDonateAmount;
+        const remainingTotalballance = mainBallanceEl - donateInput;
+        if(remainingTotalballance < 0){
+            alert('You Dont have suffecient ballance');
+            return ;
+        }else{
+            document.getElementById('main-ballance').innerText = remainingTotalballance;
+            document.getElementById('nit-donate-amount').innerText = newNitDonateBallance;
+            const myModal = document.getElementById('my_modal_1');
+            myModal.showModal();
+
+
+
+
+
+
+
+
+
+
+
+            document.getElementById('donate-input').value= '';
+
+        }
+
+
+    }else{
+        alert('Invalid Input');
+        return;
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -51,4 +106,9 @@ document.getElementById('donate-button').addEventListener('click', function (e) 
     }
 
 })
+
+
+
+
+
 

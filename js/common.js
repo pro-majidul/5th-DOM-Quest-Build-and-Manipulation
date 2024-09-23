@@ -15,7 +15,23 @@ function getValueByTag (id){
     return values;
 }
 
-// modal button close customize 
+
+
+
+
+// 1st modal button close 
+document.getElementById('my_modal_2').addEventListener('click', function(){
+    document.getElementById('my_modal_1').close();
+})
+
+
+// 1st modal button close 
+document.getElementById('my_modal_4').addEventListener('click', function(){
+    document.getElementById('my_modal_3').close();
+})
+
+
+// 3rd modal button close customize 
 document.getElementById('my_modal_6').addEventListener('click', function(){
     document.getElementById('my_modal_5').close();
 })
