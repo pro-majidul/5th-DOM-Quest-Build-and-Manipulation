@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navbarBg: '#F9F7F3',
+            comonButton: '#B4F461',
+            titleColor: '#111111',
+            bgHover: 'rgba(17, 17, 17, 0.3)',
+            textColor: 'rgba(17, 17, 17, 0.7)'
+          },
+          fontFamily: {
+            Lexend: 'Lexend'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav class=" bg-navbarBg py-4 backdrop-filter backdrop-blur">
+      <div class="container mx-auto navbar  flex justify-between items-center">
+        <a id="home-btn" href="index.html" class="btn  text-xl bg-comonButton">Home</a>
+        <a class=" md:flex hidden md:block justify-between items-center text-xl">
+          <img src="./assets/logo.png" alt="">
+          <p class="ml-3 font-bold">Donate Bangladesh</p>
+        </a>
+        <a class=" flex justify-between items-center text-xl">
+          <img src="./assets/coin.png" alt="">
+          <p class="ml-3"><span>500</span> BDT</p>
+        </a>
+      </div>
+    </nav>
+    <!-- banner -->
+    <div class="text-center mt-12 ">
+      <a href="" class="btn bg-comonButton font-bold text-xl">Donation</a>
+      <a href="" class="btn bg-transparent border-2  text-xl ml-12">History</a>
+    </div>
+  </header>
+  <main class="md:container mx-auto mt-10 space-y-5">
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="my-accordion-3" checked="checked" />
+      <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+      <div class="collapse-content">
+        <p>Document Object Model is a programming interface for web documents, DOM representing the structure of a webpage as a tree of objects.The DOM is essential for building interactive web applications, enabling developers to create responsive and dynamic user experiences</p>
+      </div>
+    </div>
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+      <div class="collapse-content">
+        <p> I can select element from DOM in various aways. the aways are 
+          (i) getElementById() 
+          (ii) getElementsByClassName()
+          (iii) getElementsByTagName()
+          (iv) querySelector()
+          (v)querySelectorAll()
+         </p>
+      </div>
+    </div>
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+      <div class="collapse-content">
+        <p>hello</p>
+      </div>
+    </div>
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+      <div class="collapse-content">
+        <p>hello</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/targetBLog.js"></script>
+
+</body>
+
+</html>

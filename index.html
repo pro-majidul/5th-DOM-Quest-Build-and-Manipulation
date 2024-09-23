@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5th-DOM-Quest-Build-and-Manipulation</title>
+  <!-- DaisyUI CDN  -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navbarBg: '#F9F7F3',
+            comonButton: '#B4F461',
+            titleColor: '#111111',
+            bgHover: 'rgba(17, 17, 17, 0.3)',
+            textColor: 'rgba(17, 17, 17, 0.7)'
+          },
+          fontFamily: {
+            Lexend: 'Lexend'
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body class="font-lexend">
+  <header class="sticky top-0 backdrop-filter backdrop-blur pb-4">
+    <nav class=" bg-navbarBg py-4 backdrop-filter backdrop-blur">
+      <div class="container mx-auto navbar  flex justify-between items-center">
+        <a id="blog-btn" class="btn  text-xl bg-comonButton">Blog</a>
+        <a class=" md:flex hidden md:block justify-between items-center text-xl">
+          <img src="./assets/logo.png" alt="">
+          <p class="ml-3 font-bold">Donate Bangladesh</p>
+        </a>
+        <a class=" flex justify-between items-center text-xl">
+          <img src="./assets/coin.png" alt="">
+          <p class="ml-3"><span>500</span> BDT</p>
+        </a>
+      </div>
+    </nav>
+    <!-- banner -->
+    <div class="text-center mt-12 ">
+      <a id="Donation-btn" href="" class="btn bg-comonButton font-bold text-xl">Donation</a>
+      <a id="history-btn" href="" class="btn bg-transparent border-2  text-xl ml-12">History</a>
+    </div>
+
+
+
+  </header>
+  <main class="md:container mx-auto">
+    <!-- donation section  -->
+    <section id="Donation-section" class="py-10 space-y-10">
+      <!-- 1st donation section  -->
+
+      <div class="bg-based-100 border rounded-xl p-8 md:flex justify-between items-center  shadow">
+        <img src="./assets/noakhali.png" alt="">
+        <div class="ml-5 space-y-5 mt-4">
+          <button class="btn">
+            <img src="./assets/coin.png" alt="">
+            <p> <span>0</span> <span>BDT</span></p>
+          </button>
+          <h3 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
+          <p> The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
+            help provide essential supplies and to those affected by this disaster. Every contribution, big or small,
+            makes difference. Please join us in supporting the relief efforts and making a positive impact on the lives
+            of those in need.</p>
+          <input id="domain-amount" class="input w-full" type="text" placeholder="Write Donation Amount">
+          <button class="btn w-full bg-comonButton font-bold ">Donate</button>
+        </div>
+
+
+      </div>
+      <!-- 2nd section  -->
+      <div class="bg-based-100 border rounded-xl p-8 md:flex justify-between items-center  shadow">
+        <img src="./assets/feni.png" alt="">
+        <div class="ml-5 space-y-5 mt-4">
+          <button class="btn">
+            <img src="./assets/coin.png" alt="">
+            <p> <span>600</span> <span>BDT</span></p>
+          </button>
+          <h3 class="text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h3>
+          <p> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your
+            generous donation will help provide immediate aid, including food, clean water, and medical supplies, to
+            those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the
+            aftermath of this disaster. Every contribution counts towards making a real difference. Please consider
+            donating today to assist those in urgent need.</p>
+          <input id="domain-amount" class="input w-full" type="text" placeholder="Write Donation Amount">
+          <button class="btn w-full bg-comonButton font-bold ">Donate</button>
+        </div>
+
+
+      </div>
+      <!-- 3rd section  -->
+      <div class="bg-based-100 border rounded-xl p-8 md:flex justify-between items-center  shadow">
+        <img src="./assets/quota-protest.png" alt="">
+        <div class="ml-5 space-y-5 mt-4">
+          <button class="btn">
+            <img src="./assets/coin.png" alt="">
+            <p> <span>0</span> <span>BDT</span></p>
+          </button>
+          <h3 class="text-xl font-bold">Aid for Injured in the Quota Movement</h3>
+          <p> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals.
+            Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those
+            affected. By contributing, you help ensure that injured individuals receive the care and support they need
+            during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in
+            their recovery. Please consider making a donation to support these brave individuals in their time of need.
+          </p>
+          <input id="domain-amount" class="input w-full" type="text" placeholder="Write Donation Amount">
+          <button onclick="my_modal_5.showModal()" class="btn w-full bg-comonButton font-bold ">Donate</button>
+          <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle ">
+            <div class="modal-box text-center ">
+              <h3 class="text-3xl  font-extrabold">Congrates!</h3>
+              <div class="flex items-center justify-center py-4">
+                <img  src="./assets/coin.png" alt="">
+              </div>
+              <p class="capitalize text-xl font bold">You have Donate for Humankind</p>
+              <p class="font-extrabold text-xl py-4 ">Successfully</p>
+              <div class="modal-action">
+                <form method="dialog">
+                  <button method="dialog" class="btn">Close Confirmation</button>
+                  <!-- if there is a button in form, it will close the modal -->
+                </form>
+              </div>
+            </div>
+          </dialog>
+        </div>
+      </div>
+    </section>
+
+    <!-- history section  -->
+    <section id="history-section" class=" hidden space-y-4 pt-10">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione libero fuga tempore, iste doloremque molestias
+        earum magnam, placeat deserunt rerum accusantium est nobis hic quisquam quae nesciunt velit ipsam dolore
+        molestiae assumenda quibusdam voluptatibus ducimus nihil autem! Nisi excepturi rem mollitia officia provident,
+        veritatis quos omnis itaque quae perferendis asperiores. Maxime possimus numquam itaque amet pariatur labore sed
+        id saepe esse neque? Unde quae officia nemo eligendi odit maiores quos itaque incidunt autem voluptate.
+        Inventore quas iste quam! Culpa voluptatem molestias, non velit veniam provident quo dolorem? Distinctio sunt
+        autem ab, molestiae omnis animi id sit quisquam veritatis maiores unde dolore, doloremque nesciunt eligendi
+        itaque rem exercitationem pariatur! Inventore quod a impedit suscipit earum quis. Ullam explicabo illo assumenda
+        est eaque, iure corporis veniam hic quam ad rem ab deleniti rerum vero, nam dolorem molestias quis quisquam
+        necessitatibus tempore? Placeat incidunt maiores ut consequatur voluptatibus numquam molestias dolorem at et
+        obcaecati magni, pariatur atque recusandae reprehenderit quos est, inventore quia corrupti modi voluptatem velit
+        fuga? Delectus saepe perferendis voluptatibus, ab, recusandae illum quis consectetur tempora aspernatur dolores
+        veritatis similique nesciunt? Eveniet architecto nam rem consectetur ducimus beatae qui debitis laborum libero
+        alias fugit, officia vitae, excepturi, consequuntur maiores quisquam dolorem veniam veritatis! Repellendus earum
+        nihil iusto et magni deleniti voluptate veritatis rerum odio, eum vel pariatur praesentium, mollitia ad. Ab unde
+        consectetur inventore dicta optio ad molestiae corporis accusamus hic illo provident soluta illum eos deleniti
+        eveniet reiciendis atque, error recusandae assumenda quisquam molestias? Quis, officiis nemo. Voluptates, eos
+        itaque. Odio esse vitae, amet eum quo id, cupiditate quae optio cum eius hic tenetur? Aperiam nulla voluptatum
+        deserunt dicta, fugiat vero sint! Sapiente, porro unde iusto, ipsa excepturi voluptate perspiciatis numquam
+        voluptates consequatur eos aperiam corporis, sit cumque voluptas. Repudiandae minus rem architecto ducimus quas
+        ratione placeat id omnis quos?</p>
+    </section>
+  </main>
+  <footer class="bg-navbarBg h-16">
+
+  </footer>
+
+  <script src="./js/targetBLog.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/features.js"></script>
+
+</body>
+
+</html>
