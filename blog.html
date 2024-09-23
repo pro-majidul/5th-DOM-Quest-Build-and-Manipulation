@@ -49,38 +49,56 @@
     </div>
   </header>
   <main id="blog-main" class="md:container mx-auto mt-10 space-y-5">
+    <!-- first question -->
     <div class="collapse collapse-plus bg-base-200">
       <input type="radio" name="my-accordion-3" checked="checked" />
       <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
       <div class="collapse-content">
-        <p>Document Object Model is a programming interface for web documents, DOM representing the structure of a webpage as a tree of objects.The DOM is essential for building interactive web applications, enabling developers to create responsive and dynamic user experiences</p>
+        <p>Document Object Model is a programming interface for web documents, DOM representing the structure of a
+          webpage as a tree of objects.The DOM is essential for building interactive web applications, enabling
+          developers to create responsive and dynamic user experiences</p>
       </div>
     </div>
+    <!-- Second  question -->
     <div class="collapse collapse-plus bg-base-200">
       <input type="radio" name="my-accordion-3" />
       <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
       <div class="collapse-content">
-        <p> I can select element from DOM in various aways. the aways are 
-          (i) getElementById() 
-          (ii) getElementsByClassName()
-          (iii) getElementsByTagName()
-          (iv) querySelector()
-          (v)querySelectorAll()
-         </p>
+        <p> I can select element from DOM in various aways. the aways are : </p>
+        <li> getElementById() </li>
+        <li> getElementsByClassName()</li>
+        <li>getElementsByTagName()</li>
+        <li>querySelector()</li>
+        <li>querySelectorAll()</li>
+
       </div>
     </div>
+    <!-- Third Question -->
     <div class="collapse collapse-plus bg-base-200">
       <input type="radio" name="my-accordion-3" />
-      <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+      <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it
+        useful?</div>
       <div class="collapse-content">
-        <p>hello</p>
+        <p>Event delegation is a technique in the DOM where a single event listener is added to a parent element.When an
+          event occurs on a child element, it bubbles up to the parent, allowing the parent to handle the event.</p>
+        <h3 class="underline">Benefit of Event Delegation :</h3>
+        <li>Reduces the number of event listeners</li>
+        <li> improving performance, especially with many child elements.</li>
+        <li> Simplifies handling of dynamically added elements</li>
+        <li> Reduces clutter in our code.</li>
       </div>
     </div>
+    <!-- fourth question -->
     <div class="collapse collapse-plus bg-base-200">
       <input type="radio" name="my-accordion-3" />
-      <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+      <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the
+        DOM?</div>
       <div class="collapse-content">
-        <p>hello</p>
+        <p>Manipulating an element's attributes and styles using the DOM is easy with JavaScript.</p>
+        <li>I can use methods like setAttribute(), getAttribute(), and removeAttribute() to manipulate an element's
+          attributes.</li>
+        <li>i can manipulate styles using the style property of an element.</li>
+        <li> adding or removing CSS classes with classList.</li>
       </div>
     </div>
   </main>
