@@ -5,11 +5,11 @@ document.getElementById('Donate-now-btn').addEventListener('click', function (ev
     const time = new Date();
     const donateInput = getValueByInput('donate-input');
     const mainBallanceEl = getValueByTag('main-ballance');
-
     if (donateInput === 'number' || donateInput > 0) {
         const nitDonateAmount = getValueByTag('nit-donate-amount');
         const newNitDonateBallance = donateInput + nitDonateAmount;
         const remainingTotalballance = mainBallanceEl - donateInput;
+
         if (remainingTotalballance < 0) {
             alert('You Dont have suffecient ballance');
             return;
